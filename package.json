@@ -1,0 +1,28 @@
+{
+  "name": "unslop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Make AI writing sound human. Three levels (AI / Human / CEO), grounded in a scraped CEO-voice corpus, with guardrails + evals.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "eval": "tsx eval/run.ts",
+    "build-corpus": "tsx scripts/build-corpus.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.65.0",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "apify-client": "^2.12.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

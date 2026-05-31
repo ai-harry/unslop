@@ -1,0 +1,36 @@
+{
+  "source": "curated-public-style",
+  "note": "Style-only anchors for terse, high-status founder voice as seen in public posts. Paraphrased and unattributed; teaches cadence (short lines, lowercase, blunt opinions), not facts about any person.",
+  "harvestedAt": "2026-05-31",
+  "samples": {
+    "subtle": [
+      "We shipped the new onboarding today. Early numbers look strong and the team moved fast.",
+      "Spent the morning with customers. The biggest lesson is that we're solving the right problem, just too slowly.",
+      "Hiring is the job. If you get the people right, almost everything else gets easier."
+    ],
+    "human": [
+      "shipped onboarding today. numbers already up. proud of the team.",
+      "talked to 6 customers this morning. we're solving the right thing, just too slow.",
+      "hiring really is the whole job. get the people right and the rest gets easy.",
+      "honestly half of building a company is just refusing to quit on the bad weeks.",
+      "everyone wants the strategy deck. nobody wants to do the boring reps. the reps win.",
+      "you don't need more meetings. you need one decision and someone who owns it."
+    ],
+    "ceo": [
+      "ship it.",
+      "speed is the strategy.",
+      "hire fast, fire faster.",
+      "if it's not a clear yes it's a no.",
+      "do the boring reps.",
+      "one owner per problem. always.",
+      "stop polishing. launch.",
+      "the meeting could've been a decision.",
+      "make it 10x cheaper or don't make it.",
+      "default to action.",
+      "cut the deck. what's the ask?",
+      "we're too slow. that's the only problem.",
+      "no is a complete sentence.",
+      "decide today. iterate tomorrow."
+    ]
+  }
+}

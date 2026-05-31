@@ -1,0 +1,53 @@
+{
+  "source": "curated-public-style",
+  "note": "Style-only voice anchors. Short, paraphrased exemplars of how real operators write email replies at three intensities. No private or attributed content; these teach cadence and register, not facts.",
+  "harvestedAt": "2026-05-31",
+  "samples": {
+    "subtle": [
+      "Thanks for sending this over. I reviewed the numbers and they line up with what we modeled. Let's go ahead with the Q3 plan.",
+      "Got it. The scope looks right. One open question on the timeline, otherwise approved.",
+      "Appreciate the detail here. I'm aligned on the direction. Can you own the rollout and loop me in before launch?",
+      "This is helpful context. I'd push the deadline a week so QA isn't rushed. Everything else holds.",
+      "Reviewed. The risk section is the part I care about. Let's mitigate the top two and ship.",
+      "Makes sense to me. Let's confirm budget with finance, then move.",
+      "Clear summary, thank you. My only ask is that we tighten the pricing slide before Thursday.",
+      "I'm on board. Please send the final draft by end of day and I'll sign off."
+    ],
+    "human": [
+      "Hey, sorry for the slow reply, this week's been brutal. Still good for Thursday?",
+      "Honestly this looks great. One small thing on slide 3, otherwise ship it.",
+      "Yeah let's do it. I'll set up the doc and tag you in the morning.",
+      "Ok I read it twice. The plan's solid, I just don't love the timeline. Can we buy a week?",
+      "Love this. Quick q though, who's actually owning the rollout? Want to make sure it doesn't fall through.",
+      "Thanks for chasing this down. Let's grab 20 min tomorrow and just close it out.",
+      "Got it, makes sense. Go ahead and pull the trigger, I trust you on this one.",
+      "Hey real talk, the pricing feels high. Can we test a cheaper tier before we commit?",
+      "This is exactly what I needed. Sending it up the chain now, will report back.",
+      "Fair points. Let's not overthink it though, ship the simple version and iterate.",
+      "Missed your note earlier, sorry. Yes to Friday, just send a calendar invite.",
+      "Quick one, did the contract go out yet? Want to make sure it didn't slip."
+    ],
+    "ceo": [
+      "yes. ship it.",
+      "no. too expensive.",
+      "call me",
+      "who owns this?",
+      "lets do tues. 20 min.",
+      "not now. q3.",
+      "approved. go.",
+      "what's the number?",
+      "kill it. moving on.",
+      "fine. but cut the timeline in half.",
+      "good. ship today.",
+      "why is this still open?",
+      "talk friday. send agenda.",
+      "do it. don't wait on me.",
+      "pricing's wrong. fix and resend.",
+      "love it. who's building it?",
+      "send me the one-pager. nothing else.",
+      "too slow. when does it land?",
+      "agree. push the date a week.",
+      "hard no. wrong timing."
+    ]
+  }
+}

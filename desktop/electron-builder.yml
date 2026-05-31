@@ -1,0 +1,42 @@
+appId: com.unslop.desktop
+productName: Unslop
+copyright: Personal build
+
+directories:
+  output: dist
+  buildResources: resources
+
+# electron-vite emits the bundled main/preload/renderer into out/. We package that
+# plus the manifest; node_modules deps (the SDK, electron-store) are pulled in by
+# electron-builder from the externalized dependency list.
+files:
+  - out/**/*
+  - package.json
+  - "!**/*.map"
+
+# The voice corpus ships as a loose resource (not bundled into the asar) so the
+# engine can read it with fs at runtime. main/index.ts points UNSLOP_CORPUS_DIR
+# at this folder inside the packaged app.
+extraResources:
+  - from: ../data/corpus
+    to: corpus
+    filter:
+      - "**/*.json"
+
+# No native modules: we synthesize Cmd+C / Cmd+V via osascript and use Electron's
+# built-in clipboard, so there is nothing to rebuild.
+npmRebuild: false
+
+mac:
+  target:
+    - dmg
+  category: public.app-category.productivity
+  # Personal, ad-hoc build: no Developer ID signing and no notarization.
+  identity: null
+  extendInfo:
+    LSUIElement: true
+    NSAppleEventsUsageDescription: "Unslop copies your selected text and pastes the rewritten version back using Apple Events."
+    NSAccessibilityUsageDescription: "Unslop needs Accessibility access to read your selection and paste the rewrite in place."
+
+dmg:
+  title: Unslop

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unslop</title>
+    <link rel="stylesheet" href="./settings.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="head">
+        <h1>Unslop<span class="dot">.</span></h1>
+        <p>Select text anywhere, press a hotkey, get it rewritten in place.</p>
+      </header>
+
+      <section class="panel" id="statusPanel">
+        <div class="status-row">
+          <span class="status-label">Anthropic API key</span>
+          <span class="badge" id="keyBadge">checking…</span>
+        </div>
+        <div class="field">
+          <input
+            id="apiKey"
+            type="password"
+            placeholder="sk-ant-..."
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <div class="btn-row">
+            <button class="btn primary" id="saveKey">Save key</button>
+            <button class="btn ghost" id="clearKey">Clear</button>
+          </div>
+          <p class="hint">Stored locally, encrypted by your macOS Keychain. Never synced.</p>
+        </div>
+
+        <div class="status-row">
+          <span class="status-label">Accessibility permission</span>
+          <span class="badge" id="accessBadge">checking…</span>
+        </div>
+        <div class="btn-row">
+          <button class="btn ghost" id="openAccess">Open System Settings</button>
+          <button class="btn ghost" id="recheckAccess">Re-check</button>
+        </div>
+        <p class="hint">
+          Required so Unslop can copy your selection and paste the rewrite. Grant it under
+          Privacy &amp; Security → Accessibility, then re-check.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Hotkeys</h2>
+        <p class="hint">Click a box and press your shortcut. Use at least one modifier.</p>
+        <div class="hk-grid">
+          <label>Subtle</label>
+          <input class="hk" id="hk-subtle" readonly value="" />
+          <label>Human</label>
+          <input class="hk" id="hk-human" readonly value="" />
+          <label>CEO</label>
+          <input class="hk" id="hk-ceo" readonly value="" />
+          <label>Polish</label>
+          <input class="hk" id="hk-polish" readonly value="" />
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Behaviour</h2>
+        <div class="opt-row">
+          <span>Default mode</span>
+          <select id="defaultMode">
+            <option value="fast">Fast (1–2s)</option>
+            <option value="full">Full (4–7s)</option>
+          </select>
+        </div>
+        <div class="opt-row">
+          <span>Polish key rewrites at</span>
+          <select id="polishLevel">
+            <option value="last">Last used level</option>
+            <option value="subtle">Subtle</option>
+            <option value="human">Human</option>
+            <option value="ceo">CEO</option>
+          </select>
+        </div>
+        <label class="check">
+          <input type="checkbox" id="injectTypos" />
+          Allow one realistic typo at CEO level
+        </label>
+        <label class="check">
+          <input type="checkbox" id="launchAtLogin" />
+          Launch at login
+        </label>
+        <label class="check">
+          <input type="checkbox" id="notifications" />
+          Show notifications
+        </label>
+      </section>
+
+      <section class="panel">
+        <h2>Test it</h2>
+        <textarea id="testInput" placeholder="Paste a sloppy message to preview a rewrite…"></textarea>
+        <div class="opt-row">
+          <select id="testLevel">
+            <option value="subtle">Subtle</option>
+            <option value="human" selected>Human</option>
+            <option value="ceo">CEO</option>
+          </select>
+          <select id="testMode">
+            <option value="fast" selected>Fast</option>
+            <option value="full">Full</option>
+          </select>
+          <button class="btn primary" id="runTest">Run</button>
+        </div>
+        <div class="result hidden" id="testResult">
+          <div class="result-body" id="testOutput"></div>
+          <div class="chips" id="testChips"></div>
+        </div>
+      </section>
+
+      <p class="foot" id="saveState"></p>
+    </main>
+    <script type="module" src="./settings.ts"></script>
+  </body>
+</html>

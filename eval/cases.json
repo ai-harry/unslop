@@ -1,0 +1,29 @@
+{
+  "note": "Eval fixtures. 'slop' must score HIGH on the AI-tell detector, 'clean' must score LOW. 'humanizeCases' run the full Layer 2+3 pipeline (requires an API key).",
+  "slop": [
+    "I wanted to reach out to express my interest in connecting regarding potential synergies between our organizations. I believe there is significant value in exploring how we might collaborate moving forward.",
+    "I hope this email finds you well. I am writing to follow up on my previous message. Please do not hesitate to reach out at your earliest convenience, and I look forward to hearing from you.",
+    "It is important to note that, moving forward, we should leverage our robust and seamless platform to drive value for all stakeholders and continue to navigate the complexities of the market.",
+    "Furthermore, I would be more than happy to circle back and touch base so that we can align on next steps and underscore the importance of this game changer."
+  ],
+  "clean": [
+    "Hey, sorry for the slow reply this week's been nuts. Still good for Thursday?",
+    "yes. ship it.",
+    "Thanks for sending this. The numbers line up. Let's go with the Q3 plan.",
+    "did this land? lmk."
+  ],
+  "humanizeCases": [
+    {
+      "name": "cold-intro",
+      "input": "Hi Jordan, I hope this email finds you well. I wanted to reach out to express my interest in connecting regarding potential synergies between our two organizations. I believe there is significant value in exploring how we might collaborate moving forward. Please let me know if you would be available for a brief call at your earliest convenience. Best regards, Jess"
+    },
+    {
+      "name": "followup-proposal",
+      "input": "Hi Sam, I am writing to follow up on the proposal I sent over last Tuesday regarding the $48k pilot. I would greatly appreciate any feedback at your earliest convenience, and please do not hesitate to reach out should you have any questions. Looking forward to hearing from you. Thanks, Jess"
+    },
+    {
+      "name": "scheduling",
+      "input": "Hello team, Moving forward, I would like to underscore the importance of aligning on next steps. Could we please find time for a brief sync on Thursday at 2pm PST to discuss the launch timeline and the three open risks? Thank you for your time and consideration."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "source": "curated-pre-ai-human",
+  "note": "Human-voice anchors capturing how real people messaged coworkers BEFORE the 2020 LLM era: short, fast, to the point, no template polish. A pre-2020 X/Twitter historical scrape was attempted via Apify but historical guest search is blocked (returns no results), so these are hand-curated to that cadence rather than scraped. Style only: no private, attributed, or factual content. They teach brevity and rhythm, not facts.",
+  "harvestedAt": "2026-05-31",
+  "samples": {
+    "human": [
+      "got your msg. yeah thursday works, just not before 11.",
+      "ugh sorry, totally spaced on this. sending it over now.",
+      "can't make 3. could we push to 4?",
+      "yeah go for it. don't need to run it by me.",
+      "no rush on this. whenever you get a sec.",
+      "looks good to me. ship it.",
+      "real quick, did the invoice go out? client just asked.",
+      "running like 10 min behind, sorry. be there soon.",
+      "hey can you forward me that email? lost it.",
+      "works for me. see you then.",
+      "sounds good, i'll bring the deck.",
+      "did we ever hear back from them? been a week.",
+      "totally fine, take your time.",
+      "ok i'm confused, which version is final?",
+      "let's just hop on a quick call, easier than typing.",
+      "thanks for catching that. fixed it.",
+      "i'm out friday, can we do mon instead?",
+      "yep all set on my end. you good?",
+      "quick heads up, the numbers changed a bit.",
+      "honestly not sure, let me check and get back to you.",
+      "can you send the file again? this one won't open.",
+      "perfect, that's exactly what i needed. thanks.",
+      "haha yeah let's do it, why not.",
+      "sorry late reply, slammed today. short answer is yes."
+    ]
+  }
+}
